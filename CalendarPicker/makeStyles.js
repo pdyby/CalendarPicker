@@ -60,7 +60,7 @@ export function makeStyles(params) {
 
     dayLabelsWrapper: {
       flexDirection: 'row',
-      borderBottomWidth: 1,
+      // borderBottomWidth: 1,
       borderTopWidth: 1,
       paddingTop: 10*scaler,
       paddingBottom: 10*scaler,
@@ -112,20 +112,36 @@ export function makeStyles(params) {
     },
 
     startDayWrapper: {
-      width: 50*scaler,
-      height: 30*scaler,
-      borderTopLeftRadius: 20*scaler,
-      borderBottomLeftRadius: 20*scaler,
+      width: 40*scaler,
+      height: 40*scaler,
+      borderRadius: 20*scaler,
       backgroundColor: SELECTED_BG_COLOR,
+      alignSelf: 'center',
+      justifyContent: 'center'
+    },
+    startDayBackWrapper: {
+      width: 40*scaler,
+      height: 40*scaler,
+      borderTopLeftRadius: 20*scaler,
+      borderBottomLeftRadius:  20*scaler,
+      backgroundColor: '#AEC0D8',
+      alignSelf: 'center',
+      justifyContent: 'center'
+    },
+    endDayBackWrapper: {
+      width: 40*scaler,
+      height: 40*scaler,
+      borderTopRightRadius: 20*scaler,
+      borderBottomRightRadius:  20*scaler,
+      backgroundColor: '#AEC0D8',
       alignSelf: 'center',
       justifyContent: 'center'
     },
 
     endDayWrapper: {
-      width: 50*scaler,
-      height: 30*scaler,
-      borderTopRightRadius: 20*scaler,
-      borderBottomRightRadius: 20*scaler,
+      width: 40*scaler,
+      height: 40*scaler,
+      borderRadius: 20*scaler,
       backgroundColor: SELECTED_BG_COLOR,
       alignSelf: 'center',
       justifyContent: 'center'
@@ -133,7 +149,7 @@ export function makeStyles(params) {
 
     inRangeDay: {
       width: 50*scaler,
-      height: 30*scaler,
+      height: 40*scaler,
       backgroundColor: SELECTED_BG_COLOR,
       alignSelf: 'center',
       justifyContent: 'center'

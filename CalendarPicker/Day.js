@@ -51,6 +51,7 @@ export default function Day(props) {
   let dateIsDisabled = false;
   let dateRangeLessThanMin = false;
   let dateRangeGreaterThanMax = false;
+  let startOrEndWrapper = {};
 
   // First let's check if date is out of range
   // Check whether props maxDate / minDate are defined. If not supplied,
@@ -147,11 +148,13 @@ export default function Day(props) {
         if (isThisDaySameAsSelectedStart) {
           computedSelectedDayStyle = [styles.startDayWrapper, selectedRangeStyle, selectedRangeStartStyle];
           selectedDayTextStyle = [styles.selectedDayLabel, propSelectedDayTextStyle, selectedRangeStartTextStyle];
+          startOrEndWrapper = [styles.startDayBackWrapper];
         }
         // Apply style for end date
         if (isThisDaySameAsSelectedEnd) {
           computedSelectedDayStyle = [styles.endDayWrapper, selectedRangeStyle, selectedRangeEndStyle];
           selectedDayTextStyle = [styles.selectedDayLabel, propSelectedDayTextStyle, selectedRangeEndTextStyle];
+          startOrEndWrapper = [styles.endDayBackWrapper];
         }
         // Apply style if start date is the same as end date
         if (isThisDaySameAsSelectedEnd &&
@@ -197,7 +200,7 @@ export default function Day(props) {
       );
     } else {
       return (
-        <View style={[styles.dayWrapper, custom.containerStyle]}>
+        <View style={[styles.dayWrapper, custom.containerStyle, startOrEndWrapper]}>
           <TouchableOpacity
             disabled={!enableDateChange}
             style={[custom.style, computedSelectedDayStyle, selectedDayStyle ]}
