@@ -12,7 +12,7 @@ function getBorderRadiusByShape(scaler, dayShape) {
   if (dayShape === 'square') {
     return 0;
   } else {
-    return 30*scaler;
+    return 40*scaler;
   }
 }
 
@@ -41,8 +41,8 @@ export function makeStyles(params) {
     },
 
     dayButton: {
-      width: 30*scaler,
-      height: 30*scaler,
+      width: 40*scaler,
+      height: 40*scaler,
       borderRadius: getBorderRadiusByShape(scaler, dayShape),
       alignSelf: 'center',
       justifyContent: 'center'
@@ -83,8 +83,8 @@ export function makeStyles(params) {
     },
 
     selectedDay: {
-      width: 30*scaler,
-      height:30*scaler,
+      width: 40*scaler,
+      height:40*scaler,
       borderRadius: getBorderRadiusByShape(scaler, dayShape),
       alignSelf: 'center',
       justifyContent: 'center'
@@ -95,8 +95,8 @@ export function makeStyles(params) {
     },
 
     selectedToday: {
-      width: 30*scaler,
-      height:30*scaler,
+      width: 40*scaler,
+      height:40*scaler,
       backgroundColor: TODAY_BG_COLOR,
       borderRadius: getBorderRadiusByShape(scaler, dayShape),
       alignSelf: 'center',
@@ -124,7 +124,7 @@ export function makeStyles(params) {
       height: 40*scaler,
       borderTopLeftRadius: 20*scaler,
       borderBottomLeftRadius:  20*scaler,
-      backgroundColor: '#AEC0D8',
+      // backgroundColor: SELECTED_BG_COLOR,
       alignSelf: 'center',
       justifyContent: 'center'
     },
@@ -133,7 +133,7 @@ export function makeStyles(params) {
       height: 40*scaler,
       borderTopRightRadius: 20*scaler,
       borderBottomRightRadius:  20*scaler,
-      backgroundColor: '#AEC0D8',
+      // backgroundColor: '#AEC0D8',
       alignSelf: 'center',
       justifyContent: 'center'
     },
