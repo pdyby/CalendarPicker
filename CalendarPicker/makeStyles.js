@@ -41,8 +41,8 @@ export function makeStyles(params) {
     },
 
     dayButton: {
-      width: 40*scaler,
-      height: 40*scaler,
+      width: 50*scaler,
+      height: 50*scaler,
       borderRadius: getBorderRadiusByShape(scaler, dayShape),
       alignSelf: 'center',
       justifyContent: 'center'
@@ -83,8 +83,8 @@ export function makeStyles(params) {
     },
 
     selectedDay: {
-      width: 40*scaler,
-      height:40*scaler,
+      width: 50*scaler,
+      height:50*scaler,
       borderRadius: getBorderRadiusByShape(scaler, dayShape),
       alignSelf: 'center',
       justifyContent: 'center'
@@ -95,8 +95,8 @@ export function makeStyles(params) {
     },
 
     selectedToday: {
-      width: 40*scaler,
-      height:40*scaler,
+      width: 50*scaler,
+      height:50*scaler,
       backgroundColor: TODAY_BG_COLOR,
       borderRadius: getBorderRadiusByShape(scaler, dayShape),
       alignSelf: 'center',
@@ -107,41 +107,39 @@ export function makeStyles(params) {
       alignItems: 'center',
       justifyContent: 'center',
       width: 50*scaler,
-      height: 40*scaler,
+      height: 60*scaler,
       backgroundColor: 'rgba(0,0,0,0.0)'
     },
 
     startDayWrapper: {
-      width: 40*scaler,
-      height: 40*scaler,
-      borderRadius: 20*scaler,
+      width: 50*scaler,
+      height: 50*scaler,
+      borderRadius: 25*scaler,
       backgroundColor: SELECTED_BG_COLOR,
       alignSelf: 'center',
       justifyContent: 'center'
     },
     startDayBackWrapper: {
-      width: 40*scaler,
-      height: 40*scaler,
-      borderTopLeftRadius: 20*scaler,
-      borderBottomLeftRadius:  20*scaler,
+      height: 50*scaler,
+      borderTopLeftRadius: 25*scaler,
+      borderBottomLeftRadius:  25*scaler,
       // backgroundColor: SELECTED_BG_COLOR,
       alignSelf: 'center',
       justifyContent: 'center'
     },
     endDayBackWrapper: {
-      width: 40*scaler,
-      height: 40*scaler,
-      borderTopRightRadius: 20*scaler,
-      borderBottomRightRadius:  20*scaler,
+      height: 50*scaler,
+      borderTopRightRadius: 25*scaler,
+      borderBottomRightRadius:  25*scaler,
       // backgroundColor: '#AEC0D8',
       alignSelf: 'center',
       justifyContent: 'center'
     },
 
     endDayWrapper: {
-      width: 40*scaler,
-      height: 40*scaler,
-      borderRadius: 20*scaler,
+      width: 50*scaler,
+      height: 50*scaler,
+      borderRadius: 25*scaler,
       backgroundColor: SELECTED_BG_COLOR,
       alignSelf: 'center',
       justifyContent: 'center'
@@ -149,7 +147,7 @@ export function makeStyles(params) {
 
     inRangeDay: {
       width: 50*scaler,
-      height: 40*scaler,
+      height: 50*scaler,
       backgroundColor: SELECTED_BG_COLOR,
       alignSelf: 'center',
       justifyContent: 'center'
